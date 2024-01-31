@@ -15,9 +15,13 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: 'about us',
+    path: 'about-us',
     component: AboutComponent,
     pathMatch: 'full',
+  },
+  {
+    path: '**',
+    redirectTo: 'home',
   },
 ];
 
