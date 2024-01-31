@@ -1,4 +1,6 @@
-section {
+// Section 1
+
+#section-1 {
   background-image: url(../../../../assets/img/img-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,12 +18,9 @@ section {
   }
 }
 
-.hero-heading {
-  font-size: 2rem;
-}
-
-.hero-text {
-  line-height: 1.8;
+p {
+  line-height: 1.9;
+  font-size: 0.9rem;
 }
 
 .hero-text,
@@ -42,5 +41,158 @@ section {
   }
   to {
     transform: translateY(10px);
+  }
+}
+
+@media (min-width: 375px) {
+  .hero-heading {
+    font-size: 2.3rem;
+  }
+}
+
+@media (min-width: 425px) {
+  .hero-heading {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-heading {
+    font-size: 3rem;
+  }
+
+  .hero-heading,
+  .hero-text {
+    width: 500px;
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  #section-1 {
+    padding-bottom: 4rem;
+    padding-top: 8rem;
+  }
+
+  .hero-heading {
+    font-size: 4rem;
+    width: 700px;
+  }
+
+  .hero-text {
+    width: 600px;
+  }
+}
+
+// Section 3
+#section-3 {
+  padding-top: 7rem;
+}
+
+.sub-heading {
+  font-weight: var(--fw-bold);
+}
+
+@media (min-width: 768px) {
+  .sub-heading {
+    font-size: 2rem;
+    width: 500px;
+  }
+
+  .sub-text {
+    width: 600px;
+  }
+
+  .sub-heading,
+  .sub-text {
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .sub-heading {
+    font-size: 2.2rem;
+  }
+
+  #section-3 {
+    padding-top: 10rem;
+  }
+}
+
+// Section 4
+
+#section-4 {
+  padding-block: 5rem;
+}
+
+.image-container {
+  max-width: 460px;
+  width: 100%;
+  height: 270px;
+  background-color: #80808054;
+}
+
+.category {
+  font-weight: var(--fw-bold);
+}
+
+h4 {
+  font-weight: var(--fw-bold);
+}
+
+@media (min-width: 768px) {
+  .custom-card {
+    width: 460px;
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .image-container {
+    max-width: 500px;
+  }
+
+  .custom-card {
+    max-width: 950px;
+    width: 100%;
+  }
+
+  #section-4 {
+    padding-top: 7rem;
+  }
+}
+
+// Section 5
+
+#section-5 {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  background-color: rgb(128 128 128 / 7%);
+}
+
+.custom-heading-2 {
+  width: 300px;
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .custom-heading-2 {
+    width: 400px;
+  }
+
+  .custom-text-2 {
+    margin-inline: auto;
+  }
+
+  .custom-text-2 {
+    width: 550px;
+  }
+
+  #section-5 {
+    padding-top: 7rem;
   }
 }
