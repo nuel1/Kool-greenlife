@@ -6,9 +6,14 @@ nav {
   font-size: 0.9rem;
 }
 
+.nav-link.active {
+  font-weight: var(--fw-bolder);
+}
+
 @media (min-width: 992px) {
   .nav-link.active {
     position: relative;
+    font-weight: var(--fw-mid);
 
     &::before {
       content: "";
