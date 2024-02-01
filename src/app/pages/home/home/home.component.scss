@@ -23,30 +23,29 @@ p {
   font-size: 0.9rem;
 }
 
-.custom-heading-1 {
-  text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #78ffe9e1 67%,
-    #7eff84e1 29%,
-    #fff700e1 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 17s linear alternate infinite;
+.hero-text {
+  font-weight: var(--fw-mid);
 }
 
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
-}
+// .custom-heading-1 {
+//   text-transform: uppercase;
+//   background-image: linear-gradient(-225deg, #fff700, #78ffe9, #7eff84);
+//   background-size: auto auto;
+//   background-clip: border-box;
+//   background-size: 100% auto;
+//   color: #fff;
+//   background-clip: text;
+//   text-fill-color: transparent;
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+//   //   animation: textclip 10s linear forwards infinite;
+// }
+
+// @keyframes textclip {
+//   to {
+//     background-position: 200% center;
+//   }
+// }
 
 .hero-text,
 .custom-heading-1 {
