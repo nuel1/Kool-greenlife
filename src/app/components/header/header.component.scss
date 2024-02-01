@@ -3,12 +3,15 @@ nav {
 }
 
 .navbar-brand {
-  font-family: "Dancing Script";
-
+  font-size: 1.5rem;
   span {
     color: #77ff77;
-    font-family: "Dancing Script";
   }
+}
+
+.navbar-brand,
+.navbar-brand span {
+  font-family: "Dancing Script";
 }
 
 .nav-link {

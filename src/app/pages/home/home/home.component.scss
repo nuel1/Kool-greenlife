@@ -1,7 +1,7 @@
 // Section 1
 
 #section-1 {
-  background-image: url(../../../../assets/img/img-1.jpg);
+  background-image: url(../../../../assets/img/img-1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -23,35 +23,44 @@ p {
   font-size: 0.9rem;
 }
 
+.custom-heading-1 {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #78ffe9e1 67%,
+    #7eff84e1 29%,
+    #fff700e1 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 17s linear alternate infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
 .hero-text,
-.hero-heading {
+.custom-heading-1 {
   color: #fffffff2;
 }
 
-.arrow-down-wrapper {
-  svg {
-    display: block;
-    animation: slideUpAndDown 0.8s linear alternate infinite;
-  }
-}
-
-@keyframes slideUpAndDown {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(10px);
-  }
-}
-
 @media (min-width: 375px) {
-  .hero-heading {
+  .custom-heading-1 {
     font-size: 2.3rem;
   }
 }
 
 @media (min-width: 425px) {
-  .hero-heading {
+  .custom-heading-1 {
     font-size: 2.5rem;
   }
 
@@ -61,13 +70,13 @@ p {
 }
 
 @media (min-width: 768px) {
-  .hero-heading {
+  .custom-heading-1 {
     font-size: 3rem;
   }
 
-  .hero-heading,
+  .custom-heading-1,
   .hero-text {
-    width: 500px;
+    max-width: 500px;
     margin-inline: auto;
   }
 }
@@ -78,13 +87,13 @@ p {
     padding-top: 8rem;
   }
 
-  .hero-heading {
+  .custom-heading-1 {
     font-size: 4rem;
-    width: 700px;
+    max-width: 700px;
   }
 
   .hero-text {
-    width: 600px;
+    max-width: 600px;
   }
 }
 
@@ -139,6 +148,17 @@ p {
   width: 100%;
   height: 270px;
   background-color: #80808054;
+
+  * {
+    height: 270px;
+  }
+}
+
+.carousel-item {
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
 }
 
 .category {

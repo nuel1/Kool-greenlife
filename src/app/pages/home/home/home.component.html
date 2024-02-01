@@ -1,6 +1,6 @@
 <section class="position-relative" id="section-1">
   <div class="container">
-    <h1 class="fw-bold text-center hero-heading">
+    <h1 class="fw-bold text-center custom-heading-1">
       This is your Primary Heading
     </h1>
     <p class="text-center hero-text mb-0 mt-4">
@@ -8,22 +8,6 @@
       in a more detailed way. This could also be an explanation of the details
       of your offer if you are running a promotion.
     </p>
-    <!-- <div class="d-flex justify-content-center arrow-down-wrapper mt-5 pt-4">
-      <a href="#section-2">
-        <svg
-          width="24"
-          height="24"
-          fill="#fffffff2"
-          xmlns="http://www.w3.org/2000/svg"
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-        >
-          <path
-            d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"
-          />
-        </svg>
-      </a>
-    </div> -->
   </div>
 </section>
 
@@ -44,7 +28,36 @@
     <h3 class="text-center custom-heading-3">Our Solution</h3>
 
     <div class="d-flex flex-column flex-lg-row gap-lg-5 custom-card">
-      <div class="image-container"></div>
+      <div class="image-container">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/img/img-2.jpg" alt="motocycle" />
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/img-3.jpg" alt="motocycle" />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
       <div class="content-wrapper mt-4">
         <p class="text-muted category mb-3">Category</p>
         <h5 class="mb-3 custom-heading-5">Key Benefits</h5>
