@@ -27,19 +27,19 @@ p {
   font-weight: var(--fw-mid);
 }
 
-// .custom-heading-1 {
-//   text-transform: uppercase;
-//   background-image: linear-gradient(-225deg, #fff700, #78ffe9, #7eff84);
-//   background-size: auto auto;
-//   background-clip: border-box;
-//   background-size: 100% auto;
-//   color: #fff;
-//   background-clip: text;
-//   text-fill-color: transparent;
-//   -webkit-background-clip: text;
-//   -webkit-text-fill-color: transparent;
-//   //   animation: textclip 10s linear forwards infinite;
-// }
+.custom-heading-1 {
+  // text-transform: uppercase;
+  background-image: linear-gradient(-225deg, #fff700, #78ffe9, #7eff84);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 100% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  // animation: textclip 10s linear forwards infinite;
+}
 
 // @keyframes textclip {
 //   to {
