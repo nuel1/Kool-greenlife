@@ -101,8 +101,36 @@ p {
   padding-top: 7rem;
 }
 
+.carouselExampleFade-1 {
+  height: 300px;
+}
+
+.detail-list {
+  border-left: 1px solid #a1a1a1;
+  li {
+    &::marker {
+      content: "";
+    }
+  }
+
+  span {
+    line-height: 2.4rem;
+    width: 2.5rem;
+    font-weight: var(--fw-bolder);
+    border-radius: 30px;
+    background-color: #161616;
+    left: -1.3rem;
+  }
+}
+
 .sub-heading {
   font-weight: var(--fw-bold);
+}
+
+@media (min-width: 425px) {
+  .carouselExampleFade-1 {
+    height: 350px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -119,6 +147,11 @@ p {
   .sub-text {
     margin-inline: auto;
   }
+
+  .carouselExampleFade-1 {
+    width: 500px;
+    height: 270px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -128,6 +161,23 @@ p {
 
   #section-3 {
     padding-top: 10rem;
+  }
+
+  .hightlights {
+    max-width: 950px;
+    margin-inline: auto;
+  }
+
+  .carouselExampleFade-1 {
+    height: 350px;
+  }
+
+  .detail-list {
+    span {
+      left: -1.7rem;
+      line-height: 3.4rem;
+      width: 3.5rem;
+    }
   }
 }
 
